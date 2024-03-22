@@ -52,7 +52,7 @@ pipeline {
                 deployToTomcat('13.233.11.12', 'tomcat', 'tomcat', 'http://13.233.11.12:8080/manager/text', '/boxfuse-sample-java-war-hello', 'Prod')
                 
                 // Send Slack notification
-                //slackSend(channel: '7-30am-cloud-devops-batch', message: "Deployment to PROD has been approved by manager.")
+                slackSend(channel: '7-30am-cloud-devops-batch', message: "Manikanta deployed changes in prod.")
             }
         }
     }
